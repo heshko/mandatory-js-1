@@ -1,4 +1,10 @@
 
+// läsa in main.css 
+var head = document.querySelector("head"),
+    link = document.createElement("link");
+    link.setAttribute("rel","stylesheet");
+    link.setAttribute("href","main.css");
+    head.insertBefore(link,head.children[2]);
 //tittle 
 document.title = "Fruits & Vegetables Corp";
 
@@ -7,7 +13,7 @@ document.title = "Fruits & Vegetables Corp";
 var header = document.querySelector("header"),
 firstChild = header.firstElementChild;
 firstChild.textContent = "Fruits & Vegetables Corp";
-firstChild.style.color ="red";
+
 
 //item_3 i lista 
 var lista = document.querySelector("ul"),
